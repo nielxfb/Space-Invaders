@@ -150,11 +150,4 @@ public abstract class Entity {
 	 * @param other The entity against which we collided
 	 */
 	public abstract void collidedWith(Entity other);
-	
-	/**
-	 * Each entity (subclass of it) is able to implement some basic logic that will be run when requested
-	 * in the game loop.
-	 * 
-	 */
-	public abstract void doLogic();
 }

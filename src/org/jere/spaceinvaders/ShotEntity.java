@@ -52,8 +52,4 @@ public class ShotEntity extends Entity {
 			this.game.notifyAlienKilled();
 		}
 	}
-	
-	public void doLogic() {
-		
-	}
 }
