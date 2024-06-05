@@ -188,7 +188,8 @@ public class Game extends Canvas {
 			// resolve each entities game logic if a logic update was required
 			if (this.logicUpdateRequired) {
 				for (Entity entity : this.entities) {
-					entity.doLogic();
+					if (entity instanceof AlienEntity)
+						entity.doLogic();
 				}
 				
 				// set it back to false, until some other entity needs updating
