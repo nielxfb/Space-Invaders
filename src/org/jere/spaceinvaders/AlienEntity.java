@@ -16,7 +16,7 @@ public class AlienEntity extends Entity {
 	 */
 	public AlienEntity(Game pGame, String spriteRef, double x, double y) {
 		super(pGame, spriteRef, x, y);
-		
+			
 		// we want the aliens to start moving left, like they do in the original version
 		this.dx = -this.moveSpeed;
 	}
