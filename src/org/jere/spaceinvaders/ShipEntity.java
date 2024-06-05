@@ -1,6 +1,6 @@
 package org.jere.spaceinvaders;
 
-public class ShipEntity extends Entity {
+public class ShipEntity extends Entity implements Collidable {
 	/**
 	 * Creates a new Ship Entity
 	 * 

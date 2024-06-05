@@ -39,11 +39,7 @@ public class AlienEntity extends Entity {
 		
 		super.move(delta);
 	}
-	
-	public void collidedWith(Entity other) {
-		// aliens don't need to notify anyone when they collide, until now at least
-	}
-	
+
 	public void doLogic() {
 		// swap over horizontal movement and move down the screen a bit
 		this.dx = -this.dx;

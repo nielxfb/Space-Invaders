@@ -175,9 +175,20 @@ public class Game extends Canvas {
 					}
 					// notify both entities if we find a collision
 					if (me.collidesWith(him)) {
-						me.collidedWith(him);
-						him.collidedWith(me);
-					}
+//						me.collidedWith(him);
+//						him.collidedWith(me);
+						if (me instanceof ShotEntity) {
+							((ShotEntity) me).collidedWith(him);
+						} else if (me instanceof ShipEntity) {
+							((ShipEntity) me).collidedWith(him);
+						}
+
+						if (him instanceof ShotEntity) {
+							((ShotEntity) him).collidedWith(me);
+						} else if (him instanceof ShipEntity) {
+							((ShipEntity) him).collidedWith(me);
+						}
+                    }
 				}
 			}
 			
