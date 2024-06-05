@@ -297,7 +297,7 @@ public class Game extends Canvas {
 	 * 
 	 */
 	public void notifyPlayerDeath() {
-		this.message = "Sucker. You are DEAD!";
+		this.message = "Game Over";
 		this.waitingForKeyPress = true;
 	}
 	
@@ -306,7 +306,7 @@ public class Game extends Canvas {
 	 * 
 	 */
 	public void notifyPlayerWin() {
-		this.message = "Lucky bastard. You managed to escape the gay republican aliens!";
+		this.message = "Congratulations";
 		this.waitingForKeyPress = true;
 	}
 	
