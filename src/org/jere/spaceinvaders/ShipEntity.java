@@ -40,4 +40,8 @@ public class ShipEntity extends Entity {
 			game.notifyPlayerDeath();
 		}
 	}
+	
+	public void doLogic() {
+		
+	}
 }
