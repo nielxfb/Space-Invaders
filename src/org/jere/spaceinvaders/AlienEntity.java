@@ -33,12 +33,7 @@ public class AlienEntity extends Entity {
 	public void move(long delta) {
 		// if we're moving left and we are on the left-most edge of the screen, we want the aliens to move another row down,
 		// but to do this we first need to update the game logic to check some things
-		if (dx < 0 && this.x < 10) {
-			game.updateLogic();
-		}
-		
-		// same for the right edge
-		if (dx > 0 && this.x > 750) {
+		if ((dx < 0 && this.x < 10 ) || (dx > 0 && this.x > 750)) {
 			game.updateLogic();
 		}
 		
