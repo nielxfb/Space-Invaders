@@ -1,6 +1,6 @@
 package org.jere.spaceinvaders;
 
-public class ShotEntity extends Entity {
+public class ShotEntity extends Entity implements Collidable {
 	/** The speed at which the shots will move **/
 	private int shotSpeed = 300;	
 	/** Indicates if the shot has already hit something, used to prevent double kills **/
